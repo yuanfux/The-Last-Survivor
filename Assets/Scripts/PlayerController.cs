@@ -29,9 +29,5 @@ public class PlayerController : MonoBehaviour {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(rotateDirection), rotateSpeed * Time.deltaTime);
             transform.Translate(Vector3.forward * Time.deltaTime * speed);
         }
-        // float translation = Input.GetAxis("Vertical") * speed * Time.deltaTime;
-        // float rotation = Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime;
-        // transform.Translate(0, 0, translation);
-        // transform.Rotate(0, rotation, 0);
     }
 }
